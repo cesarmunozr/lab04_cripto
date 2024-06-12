@@ -43,9 +43,9 @@
 
   divs.forEach((div) => {
     const className = div.className;
-    const match = className.match(/^M(\d+)$/);
+    const match = className.match(/^M\d+$/);
 
-    if (match && match[1] !== (divs.length - 1).toString()) {
+    if (match) {
       count++;
     }
   });
